@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Current Weather condition</title>
+        <meta charset ="utf-8">
+		<meta name="description" content=""/>
+		<meta name="keywords" content="HTML,CSS,Java script"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    </head>
+    <body>
+        <script>
+            var x = prompt("Enter your weather condition");
+
+            if(parseInt(x)<0){
+                document.write("Freezing Weather");
+            }
+            else if(parseInt(x)<10 && parseInt(x)>0){
+                document.write("Very cold Weather");
+            }
+            else if(parseInt(x)>=10 && parseInt(x)<20){
+                document.write("Cold weather");
+            }
+            else if(parseInt(x)>=20 && parseInt(x)<30){
+                document.write("Hot Weather");
+            }
+            else{
+                document.write("Very hot");
+            }
+        </script>
+    </body>
+</html>
